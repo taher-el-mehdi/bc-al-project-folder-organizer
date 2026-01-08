@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BC AL Project Folder Organizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header" style="text-align: center;">
+    <h1>BC AL Project Folder Organizer</h1>
+    <p>Organize Business Central AL projects into clean folders by object type.</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Organizes AL files inside <strong>src</strong></li>
+        <li>Folders per object type (tables, pages, codeunits, reports, queries, enums, interfaces, xmlports)</li>
+        <li>Fast keyword-based detection, no heavy parsing</li>
+        <li>Async operations with VS Code APIs; handles locked files</li>
+      </ul>
+      <div class="btns">
+        <a class="button" href="https://marketplace.visualstudio.com/items?itemName=TAHER%20El%20Mehdi.bc-al-project-folder-organizer" target="_blank" rel="noopener">Install Extension</a>
+        <a class="button secondary" href="https://github.com/taher-el-mehdi/bc-al-project-folder-organizer" target="_blank" rel="noopener">View Source</a>
+      </div>
+    </div>
+
+    <div class="grid" style="margin-top:16px;">
+      <div class="card">
+        <h2>Usage</h2>
+        <ul>
+          <li>Open your AL workspace in VS Code</li>
+          <li>Press <strong>Ctrl + Shift + P</strong></li>
+          <li>Run <strong>AL: Organize Project Structure</strong></li>
+          <li>Files are moved into folders under <strong>src</strong></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Performance</h2>
+        <ul>
+          <li>Uses <code>workspace.findFiles</code> to scan quickly</li>
+          <li>Detects type from filename or first non-comment keyword</li>
+          <li>Batches directory creation and moves</li>
+          <li>Keeps the extension stateless; avoids touching outside <strong>src</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h2>Extensibility</h2>
+      <ul>
+        <li>Configurable folder mapping via settings (future)</li>
+        <li>Dry-run preview before moving files</li>
+        <li>Custom include/exclude globs</li>
+      </ul>
+    </div>
+
+    <p class="footer">Made from devloper for devlopers. <span>By <a style="color: azure;" href="https://www.linkedin.com/in/taher-el-mehdi/">@TAHER-El-Mehdi</a></span></p>
+  </div>
+</body>
+</html>

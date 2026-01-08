@@ -38,13 +38,27 @@ export function activate(context: vscode.ExtensionContext) {
       const unknownCount = detections.filter((t) => !t).length;
       const totalSkipped = result.skipped + alreadyPlaced + unknownCount;
 
-      vscode.window.showInformationMessage(
-        `AL Organization complete: ${result.moved} moved, ${totalSkipped} skipped (${unknownCount} unknown, ${alreadyPlaced} already placed).`
+      const action = await vscode.window.showInformationMessage(
+        `AL Organization complete: ${result.moved} moved, ${totalSkipped} skipped (${unknownCount} unknown, ${alreadyPlaced} already placed).`,
+        "Open Help"
       );
+      if (action === "Open Help") {
+        const homepage: string | undefined = (context.extension.packageJSON as any)?.homepage;
+        const url = homepage || "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/";
+        vscode.env.openExternal(vscode.Uri.parse(url));
+      }
     });
   });
 
   context.subscriptions.push(disposable);
+
+  // Register help command
+  const helpCmd = vscode.commands.registerCommand("alOrganizer.openHelp", async () => {
+    const homepage: string | undefined = (context.extension.packageJSON as any)?.homepage;
+    const url = homepage || "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/";
+    vscode.env.openExternal(vscode.Uri.parse(url));
+  });
+  context.subscriptions.push(helpCmd);
 }
 
 export function deactivate() {}

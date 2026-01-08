@@ -11,11 +11,16 @@
   },
   "categories": ["Other"],
   "main": "./out/extension.js",
+  "homepage": "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/",
   "contributes": {
     "commands": [
       {
         "command": "alOrganizer.organizeProject",
         "title": "AL: Organize src Folder Structure"
+      },
+      {
+        "command": "alOrganizer.openHelp",
+        "title": "AL: Open Organizer Help"
       }
     ]
   },

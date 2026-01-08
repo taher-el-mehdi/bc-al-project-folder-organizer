@@ -67,10 +67,18 @@ src/
 2. Open the **Command Palette**
    (`Ctrl + Shift + P`)
 3. Run:
-   ```
-   AL: Organize src Folder Structure
-   ```
+  ```
+  AL: Organize src Folder Structure
+  ```
 4. Your project is instantly reorganized ✨
+
+Need help? Visit the docs site:
+
+https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/
+
+You can also run the command:
+
+AL: Open Organizer Help (opens the docs)
 
 ---
 

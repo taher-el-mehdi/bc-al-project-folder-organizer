@@ -1,0 +1,7 @@
+**/*.ts
+**/*.map
+**/*.tsbuildinfo
+node_modules/**
+.vscode/**
+.vscode-test/**
+**/*.md

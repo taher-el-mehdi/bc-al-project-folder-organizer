@@ -1,39 +1,45 @@
 {
-  "name": "bc-al-project-folder-organizer",
-  "displayName": "BC AL Project Folder Organizer",
-  "description": "Organize Microsoft Dynamics 365 Business Central AL files in src by object type.",
-  "version": "1.0.0",
-  "publisher": "TAHER El Mehdi",
-  "icon": "assets/logo.ico",
-  "license": "MIT",
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "categories": ["Other"],
-  "main": "./out/extension.js",
-  "homepage": "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/",
-  "contributes": {
-    "commands": [
-      {
-        "command": "alOrganizer.organizeProject",
-        "title": "AL: Organize src Folder Structure"
-      },
-      {
-        "command": "alOrganizer.openHelp",
-        "title": "AL: Open Organizer Help"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "lint": "echo 'Add ESLint later'",
-    "package": "echo 'Use vsce to package'"
-  },
-  "devDependencies": {
-    "@types/node": "^20.11.0",
-    "@types/vscode": "^1.85.0",
-    "typescript": "^5.6.3"
-  }
+    "name": "bc-al-project-folder-organizer",
+    "displayName": "BC AL Project Folder Organizer",
+    "description": "Organize Microsoft Dynamics 365 Business Central AL files in src by object type.",
+    "version": "1.0.0",
+    "publisher": "TAHERElMehdi",
+    "icon": "assets/logo.ico",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "main": "./out/extension.js",
+    "homepage": "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/",
+    "contributes": {
+        "commands": [
+            {
+                "command": "alOrganizer.organizeProject",
+                "title": "AL: Organize src Folder Structure"
+            },
+            {
+                "command": "alOrganizer.openHelp",
+                "title": "AL: Open Organizer Help"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "lint": "echo 'Add ESLint later'",
+        "package": "echo 'Use vsce to package'"
+    },
+    "devDependencies": {
+        "@types/node": "^20.11.0",
+        "@types/vscode": "^1.85.0",
+        "typescript": "^5.6.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/taher-el-mehdi/bc-al-project-folder-organizer.git"
+    }
 }

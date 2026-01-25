@@ -14,6 +14,18 @@
     ],
     "main": "./out/extension.js",
     "homepage": "https://taher-el-mehdi.github.io/bc-al-project-folder-organizer/",
+    "bugs": {
+        "url": "https://github.com/taher-el-mehdi/bc-al-project-folder-organizer/issues"
+    },
+    "keywords": [
+        "Business Central",
+        "Dynamics 365",
+        "AL",
+        "AL Language",
+        "Microsoft Dynamics",
+        "AL Objects",
+        "Business Central Development"
+    ],
     "contributes": {
         "commands": [
             {

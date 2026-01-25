@@ -1,8 +1,8 @@
 {
     "name": "bc-al-project-folder-organizer",
-    "displayName": "BC AL Project Folder Organizer",
+    "displayName": "AL Files Organizer",
     "description": "Organize Microsoft Dynamics 365 Business Central AL files in src by object type.",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "publisher": "TAHERElMehdi",
     "icon": "assets/logo.ico",
     "license": "MIT",
@@ -18,11 +18,7 @@
         "commands": [
             {
                 "command": "alOrganizer.organizeProject",
-                "title": "AL: Organize src Folder Structure"
-            },
-            {
-                "command": "alOrganizer.openHelp",
-                "title": "AL: Open Organizer Help"
+                "title": "EMT: Organize AL Files"
             }
         ]
     },

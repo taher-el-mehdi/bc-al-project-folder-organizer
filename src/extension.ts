@@ -20,7 +20,7 @@ export function activate(context: vscode.ExtensionContext) {
       progress.report({ message: "Scanning files" });
       const files = await scanALFiles();
       if (files.length === 0) {
-        vscode.window.showInformationMessage("No AL files found inside src.");
+        vscode.window.showInformationMessage("No AL files found in workspace.");
         return;
       }
 
